@@ -19,3 +19,9 @@ export interface CourseWithPath extends Omit<Course, 'rating' | 'reviewsCount' |
   studentCount: string;
   path: string;
 }
+
+interface CourseReturn {
+  course: Maybe<CourseWithPath>;
+  prevCourse: Maybe<CourseWithPath>;
+  nextCourse: Maybe<CourseWithPath>;
+}
